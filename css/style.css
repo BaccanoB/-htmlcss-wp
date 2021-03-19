@@ -1,7 +1,7 @@
 /* debug */
-.col {
+/* .col {
     background-color: #ABCFE7;
-}
+} */
 
 /* #logo {
     background-color: #E579E6;
@@ -11,17 +11,17 @@
     background-color: #E1D67A;
 } */
 
-main{
+/* main{
     background-color: #008AFE;
-}
+} */
 
-#top {
+/* #top {
     background-color: #ABCFE7;
-}
+} */
 
-footer {
+/* footer {
     background-color: #8801FE;
-}
+} */
 
 /*/ debug */
 
@@ -38,6 +38,7 @@ body {
 }
 
 .col {
+    width: 23%;
     height: 500px;
     margin-bottom:15px ;
     float: left;
@@ -49,16 +50,37 @@ li {
     list-style: none;
 }
 
-a{
+li > a{
     text-decoration: none;
     text-transform: uppercase;
     color: lightgray;
 }
 
-a:hover {
+li > a:hover {
     background-color: black;
 }
 
+.transparency{
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.img{
+    height: 230px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
+
+.aside {
+    padding-top: 20px;
+}
+
+h3 {
+    padding-bottom: 10px;
+    color: black;
+}
 
 /* container */
 
@@ -72,7 +94,7 @@ a:hover {
 #logo {
     height: 70px;
     padding-right: 10px;
-    border-right: 1px solid lightgray;
+    border-right: 1px solid rgb(190, 187, 187);
 }
 
 .navigator {
@@ -89,14 +111,7 @@ a:hover {
     color: white;
 }
 
-#Transaprency{
-    height: 450px;
-    background-color: rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-
-}
-
-#Text {
+#text {
     width: 450px;
     margin:0 0 50px 40px;
     position:absolute ;
@@ -112,16 +127,26 @@ main::after {
 }
 
 main{
-    margin-top: 10px;
+    height: 700px;
+    margin-top: 40px;
+    color: rgb(190, 187, 187);
 }
 
-#top {
-    height: 60px;
-    margin-bottom: 15px;
+h1 {
+   font-size: 30px;
+   color: black;
 }
 
-#left , #right {
-    width: 23%;
+#subtitle {
+    color: rgb(190, 187, 187);
+}
+
+#middle-section {
+    margin: 30px 0;
+}
+
+.left {
+    background-image: url(../img/img-1.jpg); 
 }
 
 #centre {
@@ -129,10 +154,25 @@ main{
     margin: 0 2%; 
 }
 
+#middle-banner {
+    background-image: url(../img/banner-2.jpg);
+}
+
+.right {
+    background-image: url(../img/img-3.jpg);
+}
+
 /* footer */
 
 footer {
-    height: 50px;
     margin-top: 5px;
     margin-bottom: 10px;
+    text-align: center;
+}
+
+span::after {
+    content:"\2665";
+    margin-left: 5px;
+    color: #FF3D3D;
+    font-size: 25px;
 }
