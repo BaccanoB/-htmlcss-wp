@@ -39,7 +39,6 @@ body {
 
 .col {
     width: 23%;
-    height: 500px;
     margin-bottom:15px ;
     float: left;
 }
@@ -120,14 +119,14 @@ h3 {
 
 /* main */
 
-main::after {
+#middle-section::after {
     content:"";
     display: table;
     clear: both;
 }
 
 main{
-    height: 700px;
+    /* height: 700px; */
     margin-top: 40px;
     color: rgb(190, 187, 187);
 }
